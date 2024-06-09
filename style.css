@@ -75,3 +75,40 @@ header {
     color: red;
     transform:scale(0.9);
 }
+/* Loader */
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color:grey ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden; */
+    display: block;
+
+}
+#load{
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    height: 10vw;
+    background-color: white;
+    border: 4px solid white;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%,-45%);
+    border-radius: 100%;
+    border-top: 4px solid black;
+    animation:1s ease-in-out infinite  rotate;
+    
+}
+@keyframes rotate {
+0%{
+    transform: rotate(0deg);;
+}
+100%{
+    transform:rotate(360deg) ;
+}
+    
+}

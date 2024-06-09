@@ -1,16 +1,8 @@
 let instrumentBox = document.querySelector("#musicSystem");
-
-// console.log(instrumentBox)
-
 let div;
 function outlook() {
-
-
     let name = ["Crash", "Kick", "Snare", "Tom"]
-
     let imageLink = ["./images/crash.png", "./images/kick.png", "./images/snare.png", "./images/tom.png"]
-
-
     for (let i = 0; i < 4; i++) {
         div = document.createElement("div");
         div.classList.add("hello")
@@ -22,26 +14,10 @@ function outlook() {
 
         document.querySelector(`#kit${i}`).addEventListener("click", function () {
             document.querySelector(`#music${i}`).play();
-
-
-
         })
-
-
-
     }
-
-
-
 }
-
-
-
-
 outlook();
-
-
-
 // Audio Portion
 
 function audioTamJham() {
@@ -74,21 +50,35 @@ window.addEventListener("keydown", function (event) {
 
     for (let i = 0; i < 4; i++) {
 
-        let vr = this.document.querySelector(`#kit${i}`).innerText.slice(0,1);
+        let vr = this.document.querySelector(`#kit${i}`).innerText.slice(0, 1);
 
-        let a =  vr.toLowerCase();
-      console.log();
-      if(event.key === a){
-        document.querySelector(`#music${i}`).play();
-        
-        break;
-      }
+        let a = vr.toLowerCase();
+        console.log();
+        if (event.key === a) {
+            document.querySelector(`#music${i}`).play();
+            document.querySelector(`#kit${i}`).style.transform = "scale(0.8)"
+            document.querySelector(`#kit${i}`).style.color = "red"
+
+
+            break;
+        }
+        else{
+            document.querySelector(`#kit${i}`).style.transform = "scale(1)"
+            document.querySelector(`#kit${i}`).style.color = "black"
+
+        }
 
     }
 })
 
 
+// Loader
 
+let loader = document.querySelector("#loader");
+window.addEventListener("DOMContentLoaded", function () {
+    loader.style.display = "none";
+
+})
 
 
 
