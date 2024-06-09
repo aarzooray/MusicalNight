@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px black;
+}
+#musicSystem{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.cont{
+    border: 2px solid black;
+    width: 40%;
+    height: 40%;
+}
+.hello{
+    border: 1px solid black;
+    border-radius: 5px;
+    /* opacity: 0.8; */
+    width: 150px;
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    background-size: cover;
+    /* text-transform: lowercase; */
+    /* background-position: center; */
+    align-items: center;
+    flex-wrap:wrap ;
+    font-size: 20px;
+    justify-content: center;
+    /* background-color: brown; */
+    transition: all ease 0.2s;
+}
+
+.hello:active{
+    color: red;
+    transform:scale(0.9);
+}
