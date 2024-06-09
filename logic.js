@@ -80,6 +80,7 @@ window.addEventListener("keydown", function (event) {
       console.log();
       if(event.key === a){
         document.querySelector(`#music${i}`).play();
+        
         break;
       }
 
